@@ -1,182 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
-
-:root {
-    --bg-color: #1a191d;
-    --dark-color: #141416;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body {
-    padding: 0;
-    margin: 0;
-    background: var(--bg-color);
-    font-family: "Poppins", sans-serif;
-    color: #fff;
-    overflow-x: hidden;
+    color: #FFFAFF;
+    background-color: #111;
 }
 
-.about-me-page p {
-    font-family: Helvetica, sans-serif;
-}
-
-.intro-container {
-    height: 100vh;
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    background: var(--bg-color);
-    width: 100%;
+h1 {
     text-align: center;
-    animation-duration: 1s;
-    animation-name: fade-out;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-    animation-delay: 5s;
-}
-
-.info-box {
-    background: var(--dark-color);
-    border-radius: 10px;
-    margin-top: 17vh;
-    width: 30%;
-    position: relative;
-    min-width: 500px;
-}
-
-.avatar {
-    width: 30%;
-}
-
-#code-text {
+    color: #2dbadd;
+    font-weight: bold;
+    font-size: 80px;
     margin-top: 30vh;
-    font-family: monospace;
-    font-size: 4em;
-    margin-left: 0.5em;
-    color: rgb(19, 170, 19);
+    font-family: "Bebas Neue";
 }
 
-
-.code-letter {
+#particles-js {
     position: absolute;
-    display: inline;
-    position: relative;
-    width: 50px;
-    animation-name: swipe-up;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-}
-
-.top-page {}
-
-.about-me-page {}
-
-.sweden-text {
-    background: linear-gradient(90deg, rgba(0, 106, 167, 1) 24%, rgba(254, 204, 0, 1) 35%, rgba(254, 204, 0, 1) 50%, rgba(254, 204, 0, 1) 65%, rgba(0, 106, 167, 1) 76%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.342);
-}
-
-.languages>a {
-    display: inline-block;
-    padding-inline: 10px;
-    color: #84828a;
-    text-decoration: none;
-    transition: transform 0.2s ease, color 0.2s ease;
-}
-
-.languages>a:hover {
-    transform: scale(1.1) rotate(5deg);
-    color: rgb(100, 100, 100);
-}
-
-.about-me-btn {
-    color: #84828a;
-    cursor: pointer;
-}
-
-
-i {
-    transition: transform 0.3s ease;
-}
-
-.about-me-btn:hover>i {
-    transform: translateY(20px);
-}
-
-.content {
-    height: 110vh;
-}
-
-.info-box>h2 {
-    color: #7affff;
-}
-
-.blink {
-    animation-name: blink;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #2c2c2c41;
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgb(41, 44, 51);
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: rgb(54, 54, 54);
-}
-
-@keyframes fade-out {
-    from {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-        display: none;
-    }
-}
-
-@keyframes blink {
-    0% {
-        opacity: 0;
-    }
-
-    1% {
-        opacity: 1;
-    }
-
-    49% {
-        opacity: 1
-    }
-
-    50% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes swipe-up {
-    0% {
-        top: 0;
-        transform: scale(1.2);
-    }
-
-    100% {
-        transform: scale(0.3);
-        top: -100vh;
-    }
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    height: 100%;
+    background-color: #111111;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
 }
